@@ -76,7 +76,7 @@ const useHandleUser = () => {
             setIsBlocked(true);
             snack(
               "error",
-              "Too many failed attempts. Your account is blocked for 1 minute."
+              "You blocked for 24 hours. Please try again tommorow!"
             );
 
             setTimeout(() => setIsBlocked(false), 86400000);
