@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
 
-type Props = {
-  sx: React.CSSProperties | object;
-};
+// type Props = {
+//   sx: React.CSSProperties | object;
+// };
 
-const Styles: React.FC<Props> = ({ sx = {} }) => {
+const Styles /* React.FC<Props> */ = (/* { sx: {} } */) => {
   // const isGreen = true;
   // const isGreen = false;
   // const grayStyle = { backgroundColor: "gray" };
@@ -34,7 +34,8 @@ const Styles: React.FC<Props> = ({ sx = {} }) => {
       <h1 className="blue" style={{ color: "blue", color: "red" }}>
         four
       </h1> */}
-      <h1 style={{ color: "blue", ...sx }}>five</h1>
+      {/* <h1 style={{ color: "blue", ...sx }}>five</h1> */}
+      <h1 style={{ color: "blue" }}>five</h1>
       {/* <h1 style={grayStyle}>six</h1> */}
     </>
   );

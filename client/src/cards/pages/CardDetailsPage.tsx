@@ -10,7 +10,6 @@ import { Box, Divider, Grid, Input } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { makeFirstLetterCapital } from "../../forms/utils/algoMethods";
 import { ThemeProvider } from "../../providers/ThemeProvider";
-// import ControlledAccordions from "../../components/Accordion";
 
 const CardDetailsPage = () => {
   const { cardId } = useParams();

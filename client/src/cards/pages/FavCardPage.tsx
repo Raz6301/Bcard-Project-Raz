@@ -1,12 +1,8 @@
 import { Container } from "@mui/system";
 import React, { useCallback, useEffect } from "react";
-// import { useParams } from "react-router-dom";
 import CardsFeedback from "../components/CardsFeedback";
 import useCards from "../hooks/useCards";
 import PageHeader from "../../components/PageHeader";
-import { Navigate } from "react-router-dom";
-import ROUTES from "../../routes/routesModel";
-import { useUser } from "../../users/providers/UserProvider";
 
 const FavCardPage = () => {
   const { value, ...rest } = useCards();

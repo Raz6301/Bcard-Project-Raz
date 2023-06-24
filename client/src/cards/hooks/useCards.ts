@@ -39,7 +39,6 @@ const useCards = () => {
   const navigate = useNavigate();
   const snack = useSnack();
   const { user } = useUser();
-  // const { cardId } = useParams();
 
   const requestStatus = (
     loading: boolean,
@@ -153,7 +152,6 @@ const useCards = () => {
   const handleGetFavCards = useCallback(async () => {
     try {
       setLoading(true);
-      // const cards: CardInterface[] = await handleGetCards();
       const cards = await getCards();
       const FavCards: CardInterface[] = cards.filter(
         (card: CardInterface) => !!card.likes.find((id) => id === user?._id)

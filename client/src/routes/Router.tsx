@@ -29,6 +29,9 @@ import MyCardsPage from "../cards/pages/MyCardsPage";
 import CreateCardPage from "../cards/pages/CreateCardPage";
 import EditCardPage from "../cards/pages/CardEditPage";
 import FavCardsPage from "../cards/pages/FavCardPage";
+import Babel from "../sandbox/components/Babel";
+import Styles from "../sandbox/components/Styles";
+import StringInterpolation from "../sandbox/components/StringInterpolation";
 
 const Router = () => {
   return (
@@ -47,6 +50,9 @@ const Router = () => {
       <Route path={ROUTES.SIGNUP} element={<SignupPage />} />
       <Route path={ROUTES.LOGIN} element={<LoginPage />} />
       <Route path={ROUTES.SANDBOX} element={<Sandbox />}>
+        <Route path="babel" element={<Babel />} />
+        <Route path="styles" element={<Styles />} />
+        <Route path="string-interpolation" element={<StringInterpolation />} />
         <Route path="lifecycle" element={<LifeCycleHooks />}>
           <Route path="initial" element={<InitialCycle />} />
           <Route path="use-state-cycle" element={<UseStateCycle />} />

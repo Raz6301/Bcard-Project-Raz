@@ -16,7 +16,7 @@ const Sandbox = () => {
       <AppBar position="sticky" color="transparent">
         <Toolbar>
           <NavItem label="babel" to="babel" color="black" />
-          <NavItem label="styles" to="comp-style" color="black" />
+          <NavItem label="styles" to="styles" color="black" />
           <NavItem
             label="string interpolation"
             to="string-interpolation"
